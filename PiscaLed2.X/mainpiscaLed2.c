@@ -26,7 +26,7 @@ void main(void)
     
     while(1)
     {    
-    if(Botao1==0 & Botao2==0)
+    if(Botao1==0 && Botao2)
     {
         Led1=1,Led2=0;
         __delay_ms(500);
@@ -46,19 +46,17 @@ void main(void)
         __delay_ms(1000);
         __delay_ms(1000);
       
-      
-        
+  
     }
     
-     if(Botao1||Botao2==1)
+     if(Botao1||Botao2)
     {
         Led1=1,Led2=0;
-        __delay_ms(500);
-        __delay_ms(500);
+     __delay_ms(1000);
        
          Led1=0,Led2=1;
-        __delay_ms(500);
-        __delay_ms(500);
+        __delay_ms(1000);
+     
         
        
     }
